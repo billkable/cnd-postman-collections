@@ -34,7 +34,7 @@
 										"id": "0cdc779a-f5f2-444f-892b-a14ec14d21f4",
 										"exec": [
 											"var userNameSuffix = new Date().getTime()",
-											"var userName = pm.globals.get(\"userNamePrefix\") + \"-\" + userNameSuffix;",
+											"var userName = pm.environment.get(\"userNamePrefix\") + \"-\" + userNameSuffix;",
 											"postman.setEnvironmentVariable(\"userName\",userName)",
 											""
 										],
@@ -85,12 +85,7 @@
 							],
 							"request": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "Basic dXNlcjpwYXNzd29yZA=="
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": ""
@@ -128,12 +123,7 @@
 							],
 							"request": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "Basic dXNlcjpwYXNzd29yZA=="
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": ""
@@ -185,7 +175,7 @@
 										"id": "91be115d-3bd4-4e57-9c8d-8b2a32598e3c",
 										"exec": [
 											"var projectNameSuffix = new Date().getTime();",
-											"var projectName = pm.globals.get(\"projectNamePrefix\") + \"-\" + projectNameSuffix;",
+											"var projectName = pm.environment.get(\"projectNamePrefix\") + \"-\" + projectNameSuffix;",
 											"postman.setEnvironmentVariable(\"projectName\",projectName)"
 										],
 										"type": "text/javascript"
@@ -385,7 +375,7 @@
 										"id": "91be115d-3bd4-4e57-9c8d-8b2a32598e3c",
 										"exec": [
 											"var storyNameSuffix = new Date().getTime();",
-											"var storyName = pm.globals.get(\"storyNamePrefix\") + \"-\" + storyNameSuffix;",
+											"var storyName = pm.environment.get(\"storyNamePrefix\") + \"-\" + storyNameSuffix;",
 											"postman.setEnvironmentVariable(\"storyName\",storyName)"
 										],
 										"type": "text/javascript"
