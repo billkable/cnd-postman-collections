@@ -54,4 +54,27 @@ for the following variables:
 
 ### Automated Test
 
-Use the Postman Runner to
+Use the Postman Collection Runner to run the automated tests:
+
+1.  Launch the Runner.
+
+1.  Select the `PAL-Tracker-Distributed` collection.
+
+1.  Select the `Primary Workflow` folder.
+
+1.  Select `pal-tracker-distributed-local` environment for running
+    against your local running deployment.
+
+    OR
+
+1.  Select `pal-tracker-distributed-pcf` environment for running
+    against your remote PCF running deployment.
+
+1.  Click `Run PAL Tracker...` button.
+
+The Operations in the Primary Workflow and sub folders are set up
+to correlate requests automatically, and assert the expected
+Http return status codes.
+
+You can use Postman runner to verify success or failures, and the
+Postman console to troubleshoot request failures.
