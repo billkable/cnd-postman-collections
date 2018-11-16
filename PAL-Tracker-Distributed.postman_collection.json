@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "fede4737-cd28-4add-ae10-dbdec6c22bb0",
+		"_postman_id": "1b61611a-ae6b-46ea-a2da-bcc3ed14edcb",
 		"name": "PAL-Tracker-Distributed",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -55,12 +55,10 @@
 									"raw": "{\"name\": \"{{userName}}\"}"
 								},
 								"url": {
-									"raw": "http://localhost:8083/registration",
-									"protocol": "http",
+									"raw": "{{registration-server-route}}/registration",
 									"host": [
-										"localhost"
+										"{{registration-server-route}}"
 									],
-									"port": "8083",
 									"path": [
 										"registration"
 									]
@@ -98,12 +96,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://localhost:8083/users/{{userId}}",
-									"protocol": "http",
+									"raw": "{{registration-server-route}}/users/{{userId}}",
 									"host": [
-										"localhost"
+										"{{registration-server-route}}"
 									],
-									"port": "8083",
 									"path": [
 										"users",
 										"{{userId}}"
@@ -143,12 +139,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://localhost:8083/accounts?ownerId={{userId}}",
-									"protocol": "http",
+									"raw": "{{registration-server-route}}/accounts?ownerId={{userId}}",
 									"host": [
-										"localhost"
+										"{{registration-server-route}}"
 									],
-									"port": "8083",
 									"path": [
 										"accounts"
 									],
@@ -211,12 +205,10 @@
 									"raw": "{\"name\": \"{{projectName}}\", \"accountId\": {{accountId}} }"
 								},
 								"url": {
-									"raw": "http://localhost:8083/projects",
-									"protocol": "http",
+									"raw": "{{registration-server-route}}/projects",
 									"host": [
-										"localhost"
+										"{{registration-server-route}}"
 									],
-									"port": "8083",
 									"path": [
 										"projects"
 									]
@@ -248,12 +240,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://localhost:8083/projects?accountId={{accountId}}",
-									"protocol": "http",
+									"raw": "{{registration-server-route}}/projects?accountId={{accountId}}",
 									"host": [
-										"localhost"
+										"{{registration-server-route}}"
 									],
-									"port": "8083",
 									"path": [
 										"projects"
 									],
@@ -314,12 +304,10 @@
 									"raw": "{\n\t\"projectId\": {{projectId}},\n\t\"userId\": {{userId}}, \n\t\"firstDay\": \"2015-05-17\", \n\t\"lastDay\": \"2015-05-18\"\n}"
 								},
 								"url": {
-									"raw": "http://localhost:8081/allocations",
-									"protocol": "http",
+									"raw": "{{allocations-server-route}}/allocations",
 									"host": [
-										"localhost"
+										"{{allocations-server-route}}"
 									],
-									"port": "8081",
 									"path": [
 										"allocations"
 									]
@@ -351,12 +339,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://localhost:8081/allocations?projectId={{projectId}}",
-									"protocol": "http",
+									"raw": "{{allocations-server-route}}/allocations?projectId={{projectId}}",
 									"host": [
-										"localhost"
+										"{{allocations-server-route}}"
 									],
-									"port": "8081",
 									"path": [
 										"allocations"
 									],
@@ -419,12 +405,10 @@
 									"raw": "{\n\t\"projectId\": {{projectId}}, \n\t\"name\": \"{{storyName}}\"\n}"
 								},
 								"url": {
-									"raw": "http://localhost:8082/stories",
-									"protocol": "http",
+									"raw": "{{backlog-server-route}}/stories",
 									"host": [
-										"localhost"
+										"{{backlog-server-route}}"
 									],
-									"port": "8082",
 									"path": [
 										"stories"
 									]
@@ -456,12 +440,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://localhost:8082/stories?projectId={{projectId}}",
-									"protocol": "http",
+									"raw": "{{backlog-server-route}}/stories?projectId={{projectId}}",
 									"host": [
-										"localhost"
+										"{{backlog-server-route}}"
 									],
-									"port": "8082",
 									"path": [
 										"stories"
 									],
@@ -512,12 +494,10 @@
 									"raw": "{\"projectId\": {{projectId}}, \"userId\": {{userId}}, \"date\": \"2015-05-17\", \"hours\": 6}"
 								},
 								"url": {
-									"raw": "http://localhost:8084/time-entries",
-									"protocol": "http",
+									"raw": "{{timesheets-server-route}}/time-entries",
 									"host": [
-										"localhost"
+										"{{timesheets-server-route}}"
 									],
-									"port": "8084",
 									"path": [
 										"time-entries"
 									]
@@ -547,12 +527,10 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://localhost:8084/time-entries?userId={{userId}}",
-									"protocol": "http",
+									"raw": "{{timesheets-server-route}}/time-entries?userId={{userId}}",
 									"host": [
-										"localhost"
+										"{{timesheets-server-route}}"
 									],
-									"port": "8084",
 									"path": [
 										"time-entries"
 									],
