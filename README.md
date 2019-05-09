@@ -25,7 +25,12 @@ running apps.
     in the associated manifest files.
 
 1.  Import the `PAL-Tracker-Distributed.postman_collection.json`
-    collection file.
+    collection file for labs before *Securing a Distributed System*.
+    For *Securing a Distributed System* and *Config Server* labs,
+    import the `PAL-Distributed-Oauth-PWS.postman_collection.json`
+    collection.
+    You will need to generate the access token and set the `Bearer`
+    token header through postman for successful authentication.
 
 1.  Import both the environment files:
 
