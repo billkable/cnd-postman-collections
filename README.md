@@ -11,7 +11,7 @@ running apps.
 
 ## Prerequisites
 
--   Postman v2.1 or above
+-   Postman v2.1 or above - you can install this on ubuntu versions via `sudo snap install postman --candidate`
 -   Pal Tracker Distributed application running locally and/or
     Remotely on PCF.
 
@@ -23,6 +23,10 @@ running apps.
     tags in the `pal-tracker-distributed-pcf.postman_environment.json`
     environment file with the values of running PAL Tracker distributed running on PCF (or PWS) you configured
     in the associated manifest files.
+    
+    An example using `sed`, replace `yourname` with your unique hostname suffix:
+    
+    `sed -i 's/{your-initials}\.{your-domain}/yourname.apps.evans.pal.pivotal.io/g' pal-tracker-distributed-pcf.postman_environment.json`
 
 1.  Import the `PAL-Tracker-Distributed.postman_collection.json`
     collection file for labs before *Securing a Distributed System*.
