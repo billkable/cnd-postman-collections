@@ -11,7 +11,11 @@ running apps.
 
 ## Prerequisites
 
--   Postman v2.1 or above - you can install this on ubuntu versions via `sudo snap install postman --candidate`
+-   Postman v2.1 or above 
+    - You can install this on ubuntu versions via `sudo snap install postman --candidate`
+    - When starting Postman the first time, you will be routed to the sign in page.
+      Click on the "Skip signing in and take me straight to the app" link at the bottom.
+
 -   Pal Tracker Distributed application running locally and/or
     Remotely on PCF.
 
